@@ -146,7 +146,7 @@ public:
 			int random = rand() % 1000;
 			money += random;
 			itemInven[itemlimit] = "비어있음";
-			itemlimit--;
+			if(itemlimit != 0) itemlimit--;
 		}
 		else {
 			std::cout << "???????????????" << std::endl;
