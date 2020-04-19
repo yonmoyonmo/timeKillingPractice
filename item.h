@@ -18,9 +18,11 @@ public:
 	Item(int ch) :choice(ch) {
 		srand((unsigned int)time(NULL));
 		int random = rand() % 5;
-		if (choice == 0) name = fishs[random];
-		else if (choice == 1) name == bugs[random];
-		else if (choice == 2) name == fruits[random];
+
+		if (choice == 0) { name = fishs[random]; }
+		else if (choice == 1) { name = bugs[random]; }
+		else if (choice == 2) { name = fruits[random]; }
+		else std::cout << "????" << std::endl;
 		price = rand() % 100;
 	}
 	int getPrice() {
